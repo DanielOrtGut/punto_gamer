@@ -1,0 +1,82 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* Paleta de colores */
+:root {
+    --primary-color: #4CAF50; /* Verde */
+    --secondary-color: #e9e9e9; /* Azul */
+    --text-color: #212121; /* Negro */
+}
+
+/* Estilos para las consolas */
+.container {
+    text-align: center; /* Centrar el contenido del contenedor */
+    padding: 20px; /* Espaciado interno */
+}
+
+.consolas {
+    display: flex; /* Mostrar las consolas en una fila */
+    flex-wrap: wrap; /* Permitir que las consolas se envuelvan a la siguiente fila si no hay suficiente espacio */
+    justify-content: center; /* Centrar las consolas horizontalmente */
+}
+
+.consola {
+    background-color: var(--secondary-color); /* Color de fondo de la consola */
+    border: 1px solid var(--primary-color); /* Borde de la consola */
+    border-radius: 5px; /* Borde redondeado */
+    padding: 20px; /* Espaciado interno */
+    margin: 10px; /* Margen externo */
+    width: calc(33.33% - 20px); /* Ancho de cada consola (1/3 de la fila) con margen entre ellas */
+}
+
+.consola h2 {
+    margin-bottom: 10px; /* Espaciado inferior para el título */
+}
+
+.consola button {
+    margin-top: 10px; /* Espaciado superior para los botones */
+    padding: 8px 16px; /* Espaciado interno de los botones */
+    background-color: var(--primary-color); /* Color de fondo del botón */
+    color: var(--text-color); /* Color del texto del botón */
+    border: none; /* Eliminar el borde del botón */
+    border-radius: 5px; /* Borde redondeado del botón */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+}
+
+.consola button:hover {
+    background-color: #388E3C; /* Color de fondo del botón al pasar por encima */
+}
+/* Estilos para la tabla de precios */
+table {
+    width: 100%; /* Ancho completo de la tabla */
+    border-collapse: collapse; /* Colapsar los bordes de la tabla */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+caption {
+    font-size: 1.5rem; /* Tamaño de fuente del título de la tabla */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+th, td {
+    padding: 10px; /* Espaciado interno de las celdas */
+    text-align: center; /* Centrar el contenido */
+}
+
+th {
+    background-color: var(--primary-color); /* Color de fondo del encabezado */
+    color: var(--text-color); /* Color del texto del encabezado */
+}
+
+tr:nth-child(even) {
+    background-color: var(--secondary-color); /* Color de fondo de las filas pares */
+}
+
+tr:hover {
+    background-color: #BDBDBD; /* Color de fondo al pasar el cursor sobre la fila */
+}

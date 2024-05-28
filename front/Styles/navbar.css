@@ -1,0 +1,40 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* Paleta de colores */
+:root {
+    --primary-color: #4CAF50; /* Verde */
+    --secondary-color: #2196F3; /* Azul */
+    --text-color: #FFFFFF; /* Blanco */
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: var(--primary-color); /* Color de fondo de la barra de navegación */
+    padding: 10px; /* Espaciado interno */
+}
+
+.nav-list {
+    list-style-type: none; /* Eliminar los marcadores de lista */
+    margin: 0; /* Eliminar el margen externo */
+    padding: 0; /* Eliminar el rellado */
+}
+
+.nav-list li {
+    display: inline; /* Mostrar los elementos de lista en línea */
+}
+
+.nav-list li:not(:last-child) {
+    margin-right: 20px; /* Espaciado entre elementos de lista */
+}
+
+.nav-list li a {
+    color: var(--text-color); /* Color del texto del enlace */
+    text-decoration: none; /* Eliminar el subrayado del enlace */
+    font-weight: bold; /* Negrita */
+}

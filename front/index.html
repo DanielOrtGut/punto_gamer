@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Registration</title>
+    <link rel="stylesheet" href="Styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <input type="checkbox" id="check">
+        <div class="login form">
+            <header>Inicio cuenta</header>
+            <form id="loginForm">
+                <input type="text" id="loginUsername" placeholder="Ingrese su usuario" required>
+                <input type="password" id="loginPassword" placeholder="Ingrese su contraseña" required>
+                <input type="submit" class="button">
+            </form>
+            <div class="signup">
+                <span class="signup">¿No tienes cuenta?
+                    <label for="check">Registrarse</label>
+                </span>
+            </div>
+        </div>
+        <div class="registration form">
+            <header>Registro</header>
+            <form id="registerForm">
+                <input type="text" placeholder="Ingrese su nombre" required>
+                <input type="text" id="registerUsername" placeholder="Ingrese su usuario" required>
+                <input type="password" id="registerPassword" placeholder="Create a password" required>
+                <input type="submit" class="button">
+            </form>
+            <div class="signup">
+                <span class="signup">¿Ya tienes una cuenta?
+                    <label for="check">Iniciar sesión</label>
+                </span>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
