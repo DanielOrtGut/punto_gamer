@@ -1,0 +1,77 @@
+/* styles.css */
+/* Contenedor principal */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Formulario de login */
+.login-container,
+.register-container {
+    width: 45%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Formulario de login */
+.login-container {
+    background-color: #f9f9f9;
+}
+
+/* Formulario de registro */
+.register-container {
+    background-color: #fff;
+}
+
+/* Estilos comunes para ambos formularios */
+form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 12px 0;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    /* En dispositivos pequeños, cambiar el diseño a una sola columna */
+    .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .login-container,
+    .register-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

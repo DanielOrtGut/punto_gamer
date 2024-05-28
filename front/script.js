@@ -25,5 +25,12 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
         body: JSON.stringify({ username, password })
     });
     const result = await response.json();
-    alert(result.message || result.error);
+    if (result.message) {
+        alert(result.message);
+        // Redirigir a la página de inicio después del login exitoso
+        window.location.href = 'inicio.html';
+    } else {
+        alert(result.error);
+    }
 });
+
