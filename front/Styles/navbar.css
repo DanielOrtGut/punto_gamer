@@ -8,7 +8,7 @@
 }
 /* Paleta de colores */
 :root {
-    --primary-color: #4CAF50; /* Verde */
+    --primary-color: #719acf; /* Verde */
     --secondary-color: #2196F3; /* Azul */
     --text-color: #FFFFFF; /* Blanco */
 }
@@ -37,4 +37,10 @@
     color: var(--text-color); /* Color del texto del enlace */
     text-decoration: none; /* Eliminar el subrayado del enlace */
     font-weight: bold; /* Negrita */
+}
+
+.picture{
+    
+    height: 60px;
+  width: 80px;
 }
