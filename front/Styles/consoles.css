@@ -8,7 +8,8 @@
 }
 /* Paleta de colores */
 :root {
-    --primary-color: #4CAF50; /* Verde */
+    --primary-color: #6e89a1; 
+    --buttons-color: #7182cf;
     --secondary-color: #e9e9e9; /* Azul */
     --text-color: #212121; /* Negro */
 }
@@ -49,7 +50,7 @@
 }
 
 .consola button:hover {
-    background-color: #388E3C; /* Color de fondo del botón al pasar por encima */
+    background-color: #38488e; /* Color de fondo del botón al pasar por encima */
 }
 /* Estilos para la tabla de precios */
 table {
